@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <head>
+        <title>AirTrack</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="https://lucka.moe/toolkit/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="./css/extended.css"/>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Exo+2|Lobster"
+        />
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="flex-box bg-primary flex-just-c a-c">
+            <div class="flex-box frame-16">
+                <h1 class="textwhite">AirTrack</h1>
+            </div>
+        </div>
+        <div class="info-box">
+            <div class="flex-box flex-warp">
+                <div class="info-pannel">
+                    <div><b>Tracks</b></div>
+                    <div class="flex-box flex-dir-col">
+                        <div class="flex-box text-nowarp a-baseline">
+                            <input type="text" class="w-3-c" id="pointNumInput" value="500"></input> Points
+                            <input type="checkbox" id="isInsideBox" checked>Inside Box</input>
+                            <button type="button" onclick="generateNewTrack()">Generate</button>
+                            <button type="button" onclick="clearTracks()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-pannel">
+                    <div><b>Status</b></div>
+                    <div class="flex-box flex-dir-col">
+                        <div class="flex-box text-nowarp a-baseline">
+                            <div id="trackCount">0</div>&nbsp;Tracks,&nbsp;
+                            <div id="pointCount">0</div>&nbsp;Points
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+
+        <!--Scripts-->
+        <script src="./lib/main.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTttyJkXbouCFnXIXY9ezkpAkCJyyxAFU&callback=initMap">
+        </script>
+    </body>
+</html>
