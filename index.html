@@ -29,7 +29,6 @@
                     <div class="flex-box flex-dir-col">
                         <div class="flex-box text-nowarp a-baseline">
                             <input type="text" class="w-3-c" id="pointNumInput" value="500"></input> Points
-                            <input type="checkbox" id="isInsideBox" checked>Inside Box</input>
                             <button type="button" onclick="generateNewTrack()">Generate</button>
                             <button type="button" onclick="clearTracks()">Clear</button>
                         </div>
@@ -51,7 +50,7 @@
         <!--Scripts-->
         <script src="./lib/main.js"></script>
         <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTttyJkXbouCFnXIXY9ezkpAkCJyyxAFU&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTttyJkXbouCFnXIXY9ezkpAkCJyyxAFU&libraries=geometry&callback=initMap">
         </script>
     </body>
 </html>
