@@ -25,12 +25,20 @@
         <div class="info-box">
             <div class="flex-box flex-warp">
                 <div class="info-pannel">
-                    <div><b>Tracks</b></div>
+                    <div><b>Track</b></div>
                     <div class="flex-box flex-dir-col">
                         <div class="flex-box text-nowarp a-baseline">
-                            <input type="text" class="w-3-c" id="pointNumInput" value="500"></input> Points
+                            <input type="text" class="w-3-c" id="inputPointNum" value="500"></input> Points
                             <button type="button" onclick="generateNewTrack()">Generate</button>
                             <button type="button" onclick="clearTracks()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-pannel">
+                    <div><b>Optimize</b></div>
+                    <div class="flex-box flex-dir-col">
+                        <div class="flex-box text-nowarp a-baseline">
+                            <input type="checkbox" id="checkHideZoom" onchange="onCheckHideZoomChange()" checked>Hide when zooming</input>
                         </div>
                     </div>
                 </div>
