@@ -30,6 +30,8 @@
                         <div class="flex-box text-nowarp a-baseline">
                             <input type="text" class="w-3-c" id="inputPointNum" value="800"></input> Points
                             <input type="text" class="w-3-c" id="inputTrackNum" value="1"></input> Tracks
+                        </div>
+                        <div class="flex-box text-nowarp a-baseline">
                             <button type="button" onclick="onGenerateTrack()">Generate</button>
                             <button type="button" onclick="clearTracks()">Clear</button>
                         </div>
@@ -41,6 +43,10 @@
                         <div class="flex-box text-nowarp a-baseline">
                             <input type="checkbox" id="checkHideZoom" onchange="onCheckHideZoomChange()" checked>Hide when zooming</input>
                             <input type="checkbox" id="checkHidePan" onchange="onCheckHidePanChange()" checked>Hide when panning</input>
+                        </div>
+                        <div class="flex-box text-nowarp a-baseline">
+                            <input type="checkbox" id="checkDelayDisplay" onchange="onCheckDelayDisplayChange()" checked>Delay display</input>
+                            <input type="text" class="w-3-c" id="inputDelayDisplayInterval" onchange="onInputDelayDisplayIntervalChange()" value="1000"></input> ms
                         </div>
                     </div>
                 </div>
